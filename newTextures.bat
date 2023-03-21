@@ -1,12 +1,14 @@
 echo off
 
+
 set itemClass=%1
 set itemName=%2
 shift
 shift
 
-set modelLocation=C:\Users\Darrel\Desktop\Java\test-fabric-mod\src\main\resources\assets\%itemClass%\models\item
-set textureLocation=C:\Users\Darrel\Desktop\Java\test-fabric-mod\src\main\resources\assets\%itemClass%\textures\item
+
+set modelLocation=%~dp0\src\main\resources\assets\%itemClass%\models\item
+set textureLocation=%~dp0\src\main\resources\assets\%itemClass%\textures\item
 REM https://i.imgur.com/CqLSMEQ.png
 
 REM ==========================
